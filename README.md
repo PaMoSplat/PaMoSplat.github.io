@@ -1,6 +1,6 @@
-This is a website about OpenObj
+This is a website about PaMoSplat
 
-link: https://openobj.github.io/
+link: https://PaMoSplat.github.io/
 
 git pull
 
