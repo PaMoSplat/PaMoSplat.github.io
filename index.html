@@ -239,229 +239,69 @@
   </div>
 </section>
 
-<video poster="" controls="" muted="" loop="" playsinline="" height="100%">
-  <source src="./static/videos/color_trajectories.mp4" type="video/mp4">
-</video>
-
 <section class="section">
   <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-      <!-- Animation. -->
-      <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Results</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Track Trajectories</h3>
-          <!-- <div class="large-8 columns"> -->
-          <!-- <div style="display: flex;">
-            <div class="twentytwenty-container twentytwenty-compare-4" style="width:35%">
-              <img src="./static/images/2D_seg/office_3_3dovs.png" alt="3D-OVS"/>
-              <img src="./static/images/2D_seg/office_3_lerf.png" alt="LERF"/>
-              <img src="./static/images/2D_seg/office_3_lseg.png" alt="LSEG"/>
-              <img src="./static/images/2D_seg/office_3_our.png" alt="Ours"/>
-            </div>
-            <div class="twentytwenty-container twentytwenty-compare-4" style="width:35%">
-              <img src="./static/images/2D_seg/room_0_3dovs.png" alt="3D-OVS"/>
-              <img src="./static/images/2D_seg/room_0_lerf.png" alt="LERF"/>
-              <img src="./static/images/2D_seg/room_0_lseg.png" alt="LSEG"/>
-              <img src="./static/images/2D_seg/room_0_our.png" alt="Ours"/>
-            </div>
+    <div class="columns is-centered has-text-centered">
+          <div class="column is-max-desktop">
+            <h2 class="title is-3">Track Trajectories</h2>
+            <style>
+              .container {
+                /* 假设这里设置了max-width或其他宽度相关属性 */
+                max-width: 1200px; /* 举例 */
+                margin: 0 auto; /* 使.container在其父容器中水平居中 */
+              }
             
-          </div> -->
-          <!-- <div id="videoGrid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;"> -->
-            <video poster="" controls="" muted="" loop="" playsinline="" height="100%">
-              <source src="./static/videos/color_trajectories.mp4" type="video/mp4">
-            </video>
-            <video src="./static/videos/color_trajectories.mp4" controls></video>
-            <video src="./static/videos/depth_trajectories.mp4" controls></video>
-            <video src="./static/videos/groupcolor_trajectories.mp4" controls></video>
-          <!-- </div> -->
-          <div style="display: flex;">
-            <div class="twentytwenty-container twentytwenty-compare-1" style="width:35%">
-              <img src="./static/images/2D_seg/office_3_gt.png" alt="gt"/>
-            </div>
-            <div class="twentytwenty-container twentytwenty-compare-1" style="width:35%">
-              <img src="./static/images/2D_seg/room_0_gt.png" alt="gt"/>
-            </div>
-          </div>
-          <div class="columns is-centered">
-            <!-- Wheel -->
-            <div class="column">
-              <div class="content" center="">
-                <h2 class="title is-5 has-text-centered">Office-3</h2>
+              .container > div {
+                /* 将每一行的视频居中 */
+                justify-content: center;
+              }
+            </style>
+            
+            <style>
+              .video-text-container {
+                display: flex;
+                flex-direction: column; /* 垂直堆叠视频和文字 */
+                width: 32%; /* 保持与视频相同的宽度 */
+                margin: 1%; /* 调整外边距以保持布局与原始代码一致 */
+                text-align: center; /* 文字居中 */
+              }
+              .video-text-container video {
+                margin-bottom: 0.5em; /* 视频与文字之间的间距 */
+              }
+            </style>
+            
+            <div class="container has-text-centered">
+              <div style="display: flex;">
+                <div class="video-text-container">
+                  <video id="v1" autoplay loop controls>
+                    <source src="./static/videos/centers_trajectories.mp4" type="video/mp4">
+                  </video>
+                  <p>Centers Trajectories</p>
+                </div>
+                <div class="video-text-container">
+                  <video id="v2" autoplay loop controls>
+                    <source src="./static/videos/color_trajectories.mp4" type="video/mp4">
+                  </video>
+                  <p>Color Trajectories</p>
+                </div>
+              </div>
+              <div style="display: flex;">
+                <div class="video-text-container">
+                  <video autoplay loop controls>
+                    <source src="./static/videos/depth_trajectories.mp4" type="video/mp4">
+                  </video>
+                  <p>Depth Trajectories</p>
+                </div>
+                <div class="video-text-container">
+                  <video autoplay loop controls>
+                    <source src="./static/videos/groupcolor_trajectories.mp4" type="video/mp4">
+                  </video>
+                  <p>Groupcolor Trajectories</p>
+                </div>
               </div>
             </div>
-      
-            <!-- Wheel -->
-            <div class="column">
-              <div class="content" center="">
-                <h2 class="title is-5 has-text-centered">Room-0</h2>
-              </div>
-            </div>
-          </div>
-          <div style="display: flex;">
-            <div class="twentytwenty-container twentytwenty-compare-4" style="width:35%">
-              <img src="./static/images/2D_seg/room_1_3dovs.png" alt="3D-OVS"/>
-              <img src="./static/images/2D_seg/room_1_lerf.png" alt="LERF"/>
-              <img src="./static/images/2D_seg/room_1_lseg.png" alt="LSEG"/>
-              <img src="./static/images/2D_seg/room_1_our.png" alt="Ours"/>
-            </div>
-            <div class="twentytwenty-container twentytwenty-compare-4" style="width:35%">
-              <img src="./static/images/2D_seg/room_2_3dovs.png" alt="3D-OVS"/>
-              <img src="./static/images/2D_seg/room_2_lerf.png" alt="LERF"/>
-              <img src="./static/images/2D_seg/room_2_lseg.png" alt="LSEG"/>
-              <img src="./static/images/2D_seg/room_2_our.png" alt="Ours"/>
-            </div>
-          </div>
-          <div style="display: flex;">
-            <div class="twentytwenty-container twentytwenty-compare-1" style="width:35%">
-              <img src="./static/images/2D_seg/room_1_gt.png" alt="gt"/>
-            </div>
-            <div class="twentytwenty-container twentytwenty-compare-1" style="width:35%">
-              <img src="./static/images/2D_seg/room_2_gt.png" alt="gt"/>
-            </div>
-          </div>
-          <div class="columns is-centered">
-            <!-- Wheel -->
-            <div class="column">
-              <div class="content" center="">
-                <h2 class="title is-5 has-text-centered">Room-1</h2>
-              </div>
-            </div>
-      
-            <!-- Wheel -->
-            <div class="column">
-              <div class="content" center="">
-                <h2 class="title is-5 has-text-centered">Room-2</h2>
-              </div>
-            </div>
-          </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Multi-granularity Open-vocabulary Retrieval</h3>
-          <img id="teaser" src="./static/images/checkResult.jpg" alt="teaser">
-          <h2 class="subtitle has-text-centered">
-            <span>Multi-granularity Open-vocabulary Retrieval</span>
-          </h2>
-        <!--/ Re-rendering. -->
-
-        <h3 class="title is-4">3D Reconstruction</h3>
-        <p class="caption selection" style="grid-column-start: 1; grid-column-end: 3;">
-          Visualisation of Scene
-        <select id="partial_label-selector1_3D" class="partial_label-selector-3D" style="padding: 2px; background:#f0f0f0; border:none; font-family: 'Noto Sans', sans-serif; font-size:16px;">
-                    <option value="room0" selected="">Room0</option>
-                    <option value="office0">Office0</option>
-                    <option value="office3">Office3</option>
-       </select>
-              Reconstructed by our method.
-          </p>
-          <br/>
-          <div class="columns is-centered">
-            <!-- Wheel -->
-            <div class="column">
-              <div class="content" center="">
-                <h4 class="title is-5 has-text-centered">RGB</h4>
-              </div>
-            </div>
-      
-            <!-- Wheel -->
-            <div class="column">
-              <div class="content" center="">
-                <h4 class="title is-5 has-text-centered">Semantic</h4>
-              </div>
-            </div>
-          </div>
-          <div class="partial_label_3D office0" style="display: none;">
-            <!--  office0 -->
-            <div class="grid-container">
-            <div class="item1">
-                    <model-viewer style="height: 300px; width: 400px;" alt="instance" src="./static/3dModel/office_0_rgb_colored_scene.glb" camera-controls="" auto-rotate="" exposure=".5" generate-schema="" ar-status="not-presenting">
-                    </model-viewer>
-            </div>
-            <div class="item2">
-                    <model-viewer style="height: 300px; width: 400px;" alt="partfeat" src="./static/3dModel/office_0_semantic_colored_scene.glb" camera-controls="" auto-rotate="" exposure=".5" generate-schema="" ar-status="not-presenting">
-                    </model-viewer>
-            </div>
-            <div class="item3">
-                    <model-viewer style="height: 300px; width: 400px;" alt="rgb" src="./static/3dModel/office_0_instance_colored_scene.glb" camera-controls="" auto-rotate="" exposure=".5" generate-schema="" ar-status="not-presenting">
-                    </model-viewer>
-            </div>
-            <div class="item4">
-                    <model-viewer style="height: 300px; width: 400px;" alt="semantic" src="./static/3dModel/office_0_partfeat_colored_scene.glb" camera-controls="" auto-rotate="" exposure=".5" generate-schema="" ar-status="not-presenting">
-                    </model-viewer>
-            </div>
-            </div>
-          </div>
-
-          <div class="partial_label_3D office3" style="display: none;">
-            <!--  office3  -->
-            <div class="grid-container">
-            <div class="item1">
-                    <model-viewer style="height: 300px; width: 400px;" alt="instance" src="./static/3dModel/office_3_rgb_colored_scene.glb" camera-controls="" auto-rotate="" exposure=".5" generate-schema="" ar-status="not-presenting">
-                    </model-viewer>
-            </div>
-            <div class="item2">
-                    <model-viewer style="height: 300px; width: 400px;" alt="partfeat" src="./static/3dModel/office_3_semantic_colored_scene.glb" camera-controls="" auto-rotate="" exposure=".5" generate-schema="" ar-status="not-presenting">
-                    </model-viewer>
-            </div>
-            <div class="item3">
-                    <model-viewer style="height: 300px; width: 400px;" alt="rgb" src="./static/3dModel/office_3_instance_colored_scene.glb" camera-controls="" auto-rotate="" exposure=".5" generate-schema="" ar-status="not-presenting">
-                    </model-viewer>
-            </div>
-            <div class="item4">
-                    <model-viewer style="height: 300px; width: 400px;" alt="semantic" src="./static/3dModel/office_3_partfeat_colored_scene.glb" camera-controls="" auto-rotate="" exposure=".5" generate-schema="" ar-status="not-presenting">
-                    </model-viewer>
-            </div>
-            </div>
-          </div>
-
-          <div class="partial_label_3D room0">
-            <!--  room0  -->
-            <div class="grid-container">
-            <div class="item1">
-                    <model-viewer style="height: 300px; width: 400px;" alt="instance" src="./static/3dModel/room_0_rgb_colored_scene.glb" camera-controls="" auto-rotate="" exposure=".5" generate-schema="" ar-status="not-presenting">
-                    </model-viewer>
-            </div>
-            <div class="item2">
-                    <model-viewer style="height: 300px; width: 400px;" alt="partfeat" src="./static/3dModel/room_0_semantic_colored_scene.glb" camera-controls="" auto-rotate="" exposure=".5" generate-schema="" ar-status="not-presenting">
-                    </model-viewer>
-            </div>
-            <div class="item3">
-                    <model-viewer style="height: 300px; width: 400px;" alt="rgb" src="./static/3dModel/room_0_instance_colored_scene.glb" camera-controls="" auto-rotate="" exposure=".5" generate-schema="" ar-status="not-presenting">
-                    </model-viewer>
-            </div>
-            <div class="item4">
-                    <model-viewer style="height: 300px; width: 400px;" alt="semantic" src="./static/3dModel/room_0_partfeat_colored_scene.glb" camera-controls="" auto-rotate="" exposure=".5" generate-schema="" ar-status="not-presenting">
-                    </model-viewer>
-            </div>
-            </div>
-          </div>
-          <div class="columns is-centered">
-            <!-- Wheel -->
-            <div class="column">
-              <div class="content" center="">
-                <h4 class="title is-5 has-text-centered">Instance</h4>
-              </div>
-            </div>
-      
-            <!-- Wheel -->
-            <div class="column">
-              <div class="content" center="">
-                <h4 class="title is-5 has-text-centered">Partfeat</h4>
-              </div>
-            </div>
-          </div>
       </div>
       </div>
-    <!--/ Animation. -->
-    </div>
-    <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
-    <script src="./static/js/select.js"></script>
   </div>
 </section>
 
@@ -479,6 +319,20 @@
   </div>
 </section>
 
+
+
+<script>
+  var video = document.getElementById("v1");
+
+  // 监听视频的loadedmetadata事件，该事件在视频元数据加载完成后触发
+  video.addEventListener("loadedmetadata", function() {
+    // 设置视频的当前播放位置为0
+    video.currentTime = 0;
+
+    // 播放视频
+    video.play();
+  });
+</script>
 
 <footer class="footer">
   <div class="container">
