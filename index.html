@@ -25,9 +25,9 @@
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/bulma2.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel2.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider2.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -39,8 +39,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/bulma-carousel2.min.js"></script>
+  <script src="./static/js/bulma-slider2.min.js"></script>
   <script src="./static/js/index.js"></script>
   <script src="./static/js/jquery.twentytwenty.js"></script>
   <script>
@@ -110,10 +110,13 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">PaMoSplat: Part-Aware Motion-Guided Gaussian Splatting for Dynamic Scene Reconstruction</h1>
+          <span class="author-block" style="font-size: 30px;">
+            Anonymous Authors
+          </span>
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://arxiv.org/pdf/2406.08009"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -130,9 +133,9 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=BeUdxrjItDE"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -140,19 +143,18 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/BIT-DYN/OpenObj"
+                <a href="https://github.com/PaMoSplat/anonymous_code"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Anonymous Code</span>
                   </a>
               </span>
             </div>
-
           </div>
         </div>
       </div>
@@ -168,7 +170,7 @@
           text-align: center;
         }
       </style>
-      <h2 class="title is-3">Poster</h2>
+      <!-- <h2 class="title is-3">Poster</h2> -->
       <img id="teaser" src="./static/images/poster.jpg" alt="teaser">
       <h2 class="subtitle has-text-centered">
         <span class="dnerf"> OpenObj facilitates various downstream tasks. </span>
@@ -210,32 +212,6 @@
       </div>
     </div>
     <!--/ Abstract. -->
-  </div>
-</section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <style>
-        .title.is-3 {
-          text-align: center;
-        }
-      </style>
-      <h2 class="title is-3">Framework</h2>
-      <div class="content has-text-justified">
-        <p style="text-indent: 2em;">
-        First, the Object Segmentation and Understanding module identifies and 
-        comprehends object instances from color images. Then, Mask Clustering module 
-        ensures consistent object association across frames. Next, the Part-level Fine-Grained 
-        Feature Extraction module leverages the dense segmentation capability of 
-        SAM to distinguish parts and extracts their visual features using VLMs. Finally,
-         the NeRF Rendering and Training module vectorizes the training of NeRFs for all 
-         objects based on the masks, input RGBD images, and dense VLM features, enabling it 
-         to learn detailed object properties.
-        </p>
-      </div>
-      <img id="teaser" src="./static/images/framework.jpg" alt="teaser">
-    </div>
   </div>
 </section>
 
@@ -305,7 +281,39 @@
   </div>
 </section>
 
-
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+      <div id="slider07266fd2-6881-4537-a00d-64c13bcb4d36" class="slider" tabindex="0">
+    <div class="slider-container" style="opacity: 1; width: 8512px; transition: 300ms; transform: translate3d(-3136px, 0px, 0px);"><div class="slider-item" data-slider-index="-4" data-cloned="true" style="width: 448px;"><div class="item item-img_pearl">
+          <video poster="" id="" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+            <source src="./static/videos/centers_trajectories.mp4" type="video/mp4">
+          </video>
+        </div></div><div class="slider-item" data-slider-index="-3" data-cloned="true" style="width: 448px;"><div class="item item-nerf_llff_horns">
+          <video poster="" id="" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+            <source src="./static/videos/color_trajectories.mp4" type="video/mp4">
+          </video>
+        </div></div><div class="slider-item" data-slider-index="-2" data-cloned="true" style="width: 448px;"><div class="item item-img_pluto">
+          <video poster="" id="" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+            <source src="./static/videos/depth_trajectories.mp4" type="video/mp4">
+          </video>
+        </div></div><div class="slider-item" data-slider-index="-1" data-cloned="true" style="width: 448px;"><div class="item item-sdf_david">
+          <video poster="" id="" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+            <source src="./static/videos/groupcolor_trajectories.mp4" type="video/mp4">
+          </video>
+        </div></div>
+  <div class="slider-navigation-previous"><svg viewBox="0 0 50 80" xml:space="preserve">
+      <polyline fill="currentColor" stroke-width=".5em" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "></polyline>
+    </svg></div>
+  <div class="slider-navigation-next"><svg viewBox="0 0 50 80" xml:space="preserve">
+      <polyline fill="currentColor" stroke-width=".5em" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "></polyline>
+    </svg></div><div class="slider-pagination"><div class="slider-page" data-index="0"></div><div class="slider-page" data-index="1"></div><div class="slider-page" data-index="2"></div><div class="slider-page" data-index="3"></div><div class="slider-page" data-index="4"></div><div class="slider-page" data-index="5"></div></div></div></div>
+    </div>
+    <div class="columns is-centered has-text-centered" style="text-align: center;">  
+       <p><br>Real-time interactive demo and spiral path rendering. Scenes are from Google Immersive [1], Technicolor [2], and Neural 3D Video [3] datasets.<br> <small>*The visualization of the Gaussians is inspired by Luma AI.</small></p></div>
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">

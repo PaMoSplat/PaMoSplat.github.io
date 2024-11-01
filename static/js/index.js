@@ -76,3 +76,12 @@ $(document).ready(function() {
     bulmaSlider.attach();
 
 })
+
+
+document.querySelector('.slider-navigation-previous').addEventListener('click', function() {
+  // 处理向前滑动的逻辑
+});
+
+document.querySelector('.slider-navigation-next').addEventListener('click', function() {
+  // 处理向后滑动的逻辑
+});

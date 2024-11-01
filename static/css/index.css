@@ -17,7 +17,6 @@ body {
   font-variant: small-caps;
 }
 
-
 .teaser .hero-body {
   padding-top: 0;
   padding-bottom: 3rem;
@@ -27,6 +26,37 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
+.results-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 300px; /* 根据需要调整高度 */
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slider-item {
+  min-width: 100%; /* 每个滑动项的宽度 */
+}
+
+.slider-navigation-previous,
+.slider-navigation-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider-navigation-previous {
+  left: 10px;
+}
+
+.slider-navigation-next {
+  right: 10px;
+}
 
 .publication-title {
 }
